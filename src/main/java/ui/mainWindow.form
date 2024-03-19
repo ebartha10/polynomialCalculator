@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ui.mainWindow">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="640" height="480"/>
+    </constraints>
+    <properties>
+      <alignmentX value="1.0"/>
+      <alignmentY value="1.0"/>
+      <autoscrolls value="false"/>
+      <debugGraphicsOptions value="0"/>
+      <doubleBuffered value="true"/>
+      <enabled value="true"/>
+      <foreground color="-1118741"/>
+      <maximumSize width="640" height="240"/>
+      <minimumSize width="640" height="240"/>
+      <preferredSize width="640" height="240"/>
+      <visible value="true"/>
+    </properties>
+    <border type="none" title="Polynomial Calculator" title-justification="2"/>
+    <children>
+      <component id="2356f" class="javax.swing.JTextField" binding="boxPol1">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag top="0" left="0" bottom="5" right="0" weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <minimumSize width="74" height="18"/>
+          <text value=""/>
+          <toolTipText value="Input..."/>
+        </properties>
+      </component>
+      <component id="e3b00" class="javax.swing.JLabel" binding="textPol1">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="5" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Bahnschrift" size="14"/>
+          <text value="Polynom 1:"/>
+          <verticalAlignment value="1"/>
+        </properties>
+      </component>
+      <component id="d6dcd" class="javax.swing.JTextField" binding="boxPol2">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <gridbag top="0" left="0" bottom="5" right="0" weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <minimumSize width="100" height="30"/>
+          <text value=""/>
+          <toolTipText value="Input..."/>
+        </properties>
+      </component>
+      <component id="33742" class="javax.swing.JLabel" binding="textPol2">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="5" right="0" weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Bahnschrift" size="14"/>
+          <text value="Polynom 2:"/>
+        </properties>
+      </component>
+      <component id="a1550" class="javax.swing.JLabel" binding="textResult">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-1511169"/>
+          <font name="Bahnschrift" size="14"/>
+          <text value="Result:"/>
+        </properties>
+      </component>
+      <component id="f14e6" class="javax.swing.JLabel" binding="boxResult">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="2"/>
+          <horizontalTextPosition value="2"/>
+          <text value=""/>
+          <verticalAlignment value="1"/>
+          <verticalTextPosition value="1"/>
+        </properties>
+      </component>
+      <component id="72e88" class="javax.swing.JButton" binding="multiplyButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <contentAreaFilled value="true"/>
+          <text value="Multiply"/>
+        </properties>
+      </component>
+      <component id="ba2f5" class="javax.swing.JButton" binding="divideButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <contentAreaFilled value="true"/>
+          <text value="Divide"/>
+        </properties>
+      </component>
+      <component id="46e35" class="javax.swing.JButton" binding="addButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <borderPainted value="true"/>
+          <contentAreaFilled value="true"/>
+          <font/>
+          <horizontalTextPosition value="0"/>
+          <opaque value="true"/>
+          <text value="Add"/>
+        </properties>
+      </component>
+      <component id="6f9fd" class="javax.swing.JButton" binding="subtractButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <contentAreaFilled value="true"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Subtract"/>
+        </properties>
+      </component>
+      <component id="8bd51" class="javax.swing.JButton" binding="derivativeButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <contentAreaFilled value="true"/>
+          <text value="Derivative"/>
+        </properties>
+      </component>
+      <component id="38c66" class="javax.swing.JButton" binding="primitiveButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <contentAreaFilled value="true"/>
+          <text value="Primitive"/>
+        </properties>
+      </component>
+      <component id="9d439" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Bahnschrift" size="14"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Enter a polynomial with the following form:"/>
+        </properties>
+      </component>
+      <component id="efc78" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Bahnschrift" size="20"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="Ax^i + Cx + D"/>
+        </properties>
+      </component>
+      <component id="d61df" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Consolas" size="14"/>
+          <foreground color="-16741596"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="The derivative and the primitive is"/>
+          <verticalAlignment value="3"/>
+          <verticalTextPosition value="3"/>
+        </properties>
+      </component>
+      <component id="38534" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <font name="Consolas" size="14"/>
+          <foreground color="-16741596"/>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="0"/>
+          <text value="computed for the first polynomial only."/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
